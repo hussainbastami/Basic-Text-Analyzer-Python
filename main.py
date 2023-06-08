@@ -1,6 +1,6 @@
 import re
 import sys
-def HAPPY_PRIDE_MONTH():
+def text_analyzer():
     text = input("Please Enter your text: ").strip()
 
     words = len(text.split(' '))
@@ -13,7 +13,7 @@ def HAPPY_PRIDE_MONTH():
     print(f"sentences: {sentences}")
     
     text = input("enter (q) to exit. Any other key continue: ").strip()
-    sys.exit() if text == "q" else HAPPY_PRIDE_MONTH()
+    sys.exit() if text == "q" else text_analyzer()
     
     
-HAPPY_PRIDE_MONTH()
+text_analyzer()
