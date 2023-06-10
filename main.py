@@ -6,7 +6,7 @@ def text_analyzer():
     words = len(text.split(' '))
     chars = len(text.replace(' ', ''))
     chars_space = len(text)
-    sentences = len(re.split(r'[?!.]',text))-1
+    sentences = len([i for i in re.split(r'[?!.]',text) if i.strip() != ''])
     sentences = sentences if sentences else 1
     print(f"words: {words}")
     print(f"characters: {chars}\ncharacters(including spaces): {chars_space}")
