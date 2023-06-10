@@ -12,7 +12,7 @@ def text_analyzer():
     print(f"characters: {chars}\ncharacters(including spaces): {chars_space}")
     print(f"sentences: {sentences}")
     
-    text = input("enter (q) to exit. Any other key continue: ").strip()
+    text = input("enter (q) to quit. Any other key continue: ").strip()
     sys.exit() if text == "q" else text_analyzer()
     
     
