@@ -1,5 +1,6 @@
 import re
 import sys
+
 def text_analyzer():
     text = input("Please Enter your text: ").strip()
 
